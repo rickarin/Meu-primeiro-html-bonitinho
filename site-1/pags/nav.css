@@ -81,7 +81,7 @@ header .blank-space {
 .foto-main {
   height: 93vh;
   width: 100vw;
-  background: url("/imgs/main-foto.jpg");
+  background: url("../imgs/main-foto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
