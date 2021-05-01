@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --myWhite: #e5fcff;
+  --myRed: #df2935;
+  --myBlack: #2e282a;
+  --myBlue: #7189ff;
+  --onePink: #ff729f;
+  --variantBlue: rgba(113, 137, 255, 0.6);
+  --variantPink: #e5989b;
+  --perfectPink: rgba(247, 209, 205, 0.7);
+  --backgroundPink: #fcd5ce;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  width: 100vw;
+  background-color: rgba(247, 209, 205, 0.7);
+}
+
+header .logo-container {
+  width: 20%;
+  height: 100%;
+}
+
+header .Logo {
+  position: relative;
+  top: 40%;
+  left: 25%;
+  text-decoration: none;
+  color: var(--myBlack);
+  border-bottom: 2px solid var(--myWhite);
+}
+
+header .Logo span {
+  color: var(--myRed);
+}
+
+header nav {
+  width: 70%;
+  height: 100%;
+}
+
+header nav ul {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--myBlack);
+}
+
+header .blank-space {
+  width: 10%;
+  height: 100%;
+}
+
+main {
+  height: 293vh;
+  width: 100vw;
+}
+
+main .foto-main {
+  height: 93vh;
+  width: 100vw;
+  background: url("/imgs/main-foto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+main .container-preview {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--variantBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container-preview a {
+  margin-bottom: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid var(--myRed);
+  background-color: var(--variantPink);
+  color: var(--myWhite);
+}
+
+main .container-preview a:hover {
+  background-color: var(--onePink);
+}
+
+main .container-preview a:hover::after {
+  content: " \2665";
+  color: var(--myRed);
+}
+
+main .container-preview .container-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--myWhite);
+  width: 70%;
+  height: 65%;
+}
+
+main .container-preview .container-imgs ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px;
+  list-style: none;
+}
+
+main .container-preview .container-imgs ul li {
+  height: 25vh;
+  width: 20vw;
+  background-color: black;
+  border: 1px solid red;
+}
+
+.img-one {
+  background: url("./imgs/pic-preview-1.jpg");
+  background-size: cover;
+  background-position: initial;
+}
+
+.img-two {
+  background-image: url("./imgs/pic-preview-2.jpg");
+  background-size: cover;
+}
+
+.img-three {
+  background-image: url("./imgs/pic-preview-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-four {
+  background-image: url("./imgs/pic-preview-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-five {
+  background-image: url("./imgs/pic-preview-5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-six {
+  background-image: url("./imgs/pic-preview-6.jpg");
+  background-size: cover;
+}
+
+.container-second-img {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./imgs/pic-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-second-img:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("./imgs/pic-1.png");
+}
+
+.container-second-img .text {
+  height: 70vh;
+  width: 35vw;
+  text-align: center;
+  display: none;
+  position: relative;
+  right: 15%;
+  background-color: rgba(229, 252, 255, 0);
+  color: var(--myWhite);
+}
+
+.container-second-img:hover .text {
+  display: inherit;
+}
+
+footer {
+  height: 20vh;
+  width: 100vw;
+  background-color: var(--perfectPink);
+}
+
+footer .next-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+footer .next-container a {
+  color: var(--myBlack);
+}
+
+footer .next-container a span {
+  color: var(--myRed);
+}
+
+footer .next-container ul li {
+  margin: 10px 0px;
+}
+
+footer .next-container ul li span {
+  color: var(--myRed);
+}

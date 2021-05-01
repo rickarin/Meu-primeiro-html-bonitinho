@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+  background-color: var(--myBlack);
+}
+
+main .container-about {
+  width: 50%;
+  height: 35%;
+  position: relative;
+  left: 2%;
+  color: white;
+}
+
+main .container-about p {
+  margin-bottom: 15px;
+}
+
+main .container-about h1 {
+  letter-spacing: 10px;
+}
+
+main .img-about {
+  height: 100%;
+  width: 45%;
+  max-width: 600px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("/imgs/pic-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main:hover .img-about {
+  background-image: url("/imgs/pic-3.jpg");
+}

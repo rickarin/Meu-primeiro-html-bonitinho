@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --myWhite: #e5fcff;
+  --myRed: #df2935;
+  --myBlack: #2e282a;
+  --myBlue: #7189ff;
+  --onePink: #ff729f;
+  --variantBlue: rgba(113, 137, 255, 0.6);
+  --variantPink: #e5989b;
+  --perfectPink: rgba(247, 209, 205, 0.7);
+  --backgroundPink: #fcd5ce;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  width: 100vw;
+  background-color: rgba(247, 209, 205, 0.7);
+}
+
+header .logo-container {
+  width: 20%;
+  height: 100%;
+}
+
+header .Logo {
+  position: relative;
+  top: 40%;
+  left: 25%;
+  text-decoration: none;
+  color: var(--myBlack);
+  border-bottom: 2px solid var(--myWhite);
+}
+
+header .Logo span {
+  color: var(--myRed);
+}
+
+header nav {
+  width: 70%;
+  height: 100%;
+}
+
+header nav ul {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--myBlack);
+}
+
+header .blank-space {
+  width: 10%;
+  height: 100%;
+}
+
+.foto-main {
+  height: 93vh;
+  width: 100vw;
+  background: url("/imgs/main-foto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+footer {
+  height: 20vh;
+  width: 100vw;
+  background-color: var(--perfectPink);
+}
+
+footer .next-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+footer .next-container a {
+  color: var(--myBlack);
+}
+
+footer .next-container a span {
+  color: var(--myRed);
+}
+
+footer .next-container ul li {
+  margin: 10px 0px;
+}
+
+footer .next-container ul li span {
+  color: var(--myRed);
+}
