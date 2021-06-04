@@ -1,0 +1,120 @@
+:root {
+  --azulMarinho: #81e4da;
+  --branco: #f7ece1;
+  --lilas: #242038;
+  --azul: #1c448e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 7vh;
+  background-color: var(--azulMarinho);
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+}
+
+header nav {
+  width: 50%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 8px 32px;
+  border-radius: 10px;
+  border: 1px solid var(--lilas);
+}
+
+header nav ul li:hover {
+  letter-spacing: 0.1em;
+  transition: 1s;
+  background-color: var(--branco);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--lilas);
+}
+
+main {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("./imgs/sky-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+main .container-imagem {
+  width: 40%;
+  height: 80%;
+}
+
+main .container-imagem button {
+  position: relative;
+  top: 85%;
+  left: 15%;
+  padding: 8px 32px;
+  border: 1px solid var(--lilas);
+  background-color: var(--branco);
+}
+
+main .container-imagem button:hover {
+  letter-spacing: 0.1em;
+  transition: 1s;
+  background-color: var(--lilas);
+  color: var(--branco);
+}
+
+main .container-oe {
+  width: 40%;
+  height: 80%;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./imgs/sky-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+section h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.night {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./imgs/night-sky-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.night h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  color: var(--branco);
+}
